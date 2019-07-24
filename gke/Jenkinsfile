@@ -27,10 +27,6 @@ pipeline {
 	PROD_CLUSTER_ZONE = "us-central1-c"
     }
 
-    triggers {
-        issueCommentTrigger('.*run jenkins tests*')
-    }
-
     stages {
         stage("Build and test") {
 	    agent {
