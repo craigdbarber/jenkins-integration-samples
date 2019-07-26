@@ -42,6 +42,7 @@ public class HelloControllerTest {
     public void getHello() throws Exception {
       fail();
       fail();
+      fail();
         mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().string(equalTo("Greetings from Spring Boot!")));
